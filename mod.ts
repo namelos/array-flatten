@@ -6,4 +6,4 @@ export default function flatten<T>(arr: NestedArray<T>): Array<T> {
   return arr.reduce(reducer, [])
 }
 
-type NestedArray<T> = Array<T | NestedArray<T>>
+export type NestedArray<T> = Array<T | NestedArray<T>>
